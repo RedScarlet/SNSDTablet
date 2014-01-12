@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Ignore the 'NewApi' since this isn't really a public release -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle" tools:ignore="NewApi">@style/SoshiActionBar</item>
+        <item name="android:windowBackground">@color/primary_pink</item>
+        <!--Removes icon from ActionBar, because of it's colour and the ActionBar's Colour-->
+        <item name="android:icon">@android:color/transparent</item>
+    </style>
+
+    <!-- Can't have an SNSD related app without this -->
+    <style name="SoshiActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/pink_action_bar</item>
+        <item name="background">@color/pink_action_bar</item>
+    </style>
+
+</resources>
