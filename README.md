@@ -16,3 +16,7 @@ These should point you in the right direction, I recommend you at least skim ove
 It might also be wise to get some sort of grasp on fragment, since that's what the app is made up of (This app and the SSF app).
 
 There is no due date, but just don't abandon this or take forever.
+
+Changelog:
+(17/1/14)
+Tada, finally got this thing to even function properly. Shall start getting work done from this point on. MY FIRST COMMIT! <3
