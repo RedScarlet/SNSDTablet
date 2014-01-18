@@ -20,3 +20,5 @@ There is no due date, but just don't abandon this or take forever.
 Changelog:
 (17/1/14)
 Tada, finally got this thing to even function properly. Shall start getting work done from this point on. MY FIRST COMMIT! <3
+
+SNSD Daebak
