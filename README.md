@@ -21,4 +21,5 @@ Changelog:
 (17/1/14)
 Tada, finally got this thing to even function properly. Shall start getting work done from this point on. MY FIRST COMMIT! <3
 
-SNSD Daebak
+(25/1/14)
+Managed to fix the orientation change problem which causes the app to crash. Took a VERY long time to find for the solution but now it's resolved. Now that the app is basically 'bugless', i'll begin to play around with the fragments next. (Finally)
