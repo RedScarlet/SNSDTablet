@@ -23,3 +23,6 @@ Tada, finally got this thing to even function properly. Shall start getting work
 
 (25/1/14)
 Managed to fix the orientation change problem which causes the app to crash. Took a VERY long time to find for the solution but now it's resolved. Now that the app is basically 'bugless', i'll begin to play around with the fragments next. (Finally)
+
+(15/2/14)
+Still doing heavy research on different fragment layouts. In the meantime, enabled screen compatibility mode if it makes any sense, haha.

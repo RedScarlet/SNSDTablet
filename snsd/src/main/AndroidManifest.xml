@@ -19,4 +19,9 @@
         </activity>
     </application>
 
+    <supports-screens
+        android:resizeable="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"/>
+
 </manifest>

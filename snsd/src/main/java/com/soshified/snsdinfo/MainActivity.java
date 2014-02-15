@@ -1,6 +1,7 @@
 package com.soshified.snsdinfo;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 
 /**
 * Main activity. Generally you shouldn't have everything in the one file/class but for simplicity it is done this way.
