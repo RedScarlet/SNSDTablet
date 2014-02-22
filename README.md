@@ -26,3 +26,6 @@ Managed to fix the orientation change problem which causes the app to crash. Too
 
 (15/2/14)
 Still doing heavy research on different fragment layouts. In the meantime, enabled screen compatibility mode if it makes any sense, haha.
+
+(23/2/14)
+Tried finishing the standard layouts today. Didn't turn out as planned, but I know i'm almost there.
