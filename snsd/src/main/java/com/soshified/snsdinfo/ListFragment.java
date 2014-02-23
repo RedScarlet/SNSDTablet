@@ -93,7 +93,7 @@ public class ListFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putString("name", data.get(i).get("name"));
                 contentFragment.setArguments(bundle);
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, contentFragment)
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.content, contentFragment)
                         .addToBackStack(null).commit();
 
             }

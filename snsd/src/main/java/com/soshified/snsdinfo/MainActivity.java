@@ -15,8 +15,14 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
+            //The default fragment/first fragment that will go in the right side of the screen. Otherwise it'll look strange...
+            ContentFragment contentFragment = new ContentFragment();
+            Bundle bundle = new Bundle();
+            bundle.putString("name", "SNSD");
+            contentFragment.setArguments(bundle);
+
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new ListFragment())
+                    .replace(R.id.content, contentFragment)
                     .commit();
         }
     }
