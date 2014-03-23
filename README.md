@@ -48,3 +48,6 @@ From here on out it should be fairly simple. All you need to do is make the whol
 Basing on what I've read on this, it's all a matter of creating different layout folders for the different screen types and slight modification in Java.
 
 After you think you've completed it, I'll look at it and tell you what I think. After that, you'll have free reign over the Soshified repo!
+
+**(23/3/14)**
+Oh god, been fiddling around with the same bug for weeks and I can't find the culprit. My plan was to create a layout to handle the device when in portrait orientation, and only splitting into 2 fragments when in horizontal. From my eyes, everything looks close to perfect already. HELP ME PLS.

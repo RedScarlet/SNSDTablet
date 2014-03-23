@@ -1,5 +1,6 @@
 package com.soshified.snsdinfo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
@@ -24,6 +25,11 @@ public class MainActivity extends ActionBarActivity {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.content, contentFragment)
                     .commit();
+        } else {
+            Intent intent = new Intent(getApplicationContext(),
+                    DetailActivity.class);
+            startActivity(intent);
+
         }
     }
 

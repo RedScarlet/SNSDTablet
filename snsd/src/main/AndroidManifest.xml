@@ -17,11 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.soshified.snsdinfo.DetailActivity"/>
     </application>
 
     <supports-screens
         android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
         android:largeScreens="true"
-        android:xlargeScreens="true"/>
+        android:xlargeScreens="true" />
 
 </manifest>
