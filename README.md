@@ -51,3 +51,14 @@ After you think you've completed it, I'll look at it and tell you what I think. 
 
 **(23/3/14)**
 Oh god, been fiddling around with the same bug for weeks and I can't find the culprit. My plan was to create a layout to handle the device when in portrait orientation, and only splitting into 2 fragments when in horizontal. From my eyes, everything looks close to perfect already. HELP ME PLS.
+
+**(24/3/14)**
+It's actually very trivial lol. One little secret: When trying to find a bug, try to explain it to an innanimate object that has no idea about the code. Go through every method and every class, and explain it to the object. Chances are, you will find something that you overlook because of tunnel vision. If you think about it, it's a pretty useful technique.
+
+That aside, I'll let you look at the code. But we weren't checking for orientation in the MainActivity class and as such we were forcing the ContentView into a view that simply didn't exist at the time (because we were using the wrong layout file, but if using the version as of this commit, you can try rotating your device and then getting into the app).
+
+And fair warning: With your detail activity stuff, it will crash.
+
+I fixed the bug, and one other thing (I commented it in).
+
+From here, it looks like you've got one or two things left. If you try rotating the app, it won't change to the layout that was built for it (it'll resize it's current layout), I purposely left this alone and see if you can find it :merong:. But it's a really simple fix, you need to remove a word in the manifest.

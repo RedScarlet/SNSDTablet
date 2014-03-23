@@ -82,8 +82,7 @@ public class ListFragment extends Fragment {
 
         //The text view above is located in the android.R.layout.simple_list_item_1, which is a default/generic layout
         //https://github.com/android/platform_frameworks_base/blob/master/core/res/res/layout/activity_list_item_2.xml
-        if(listview.getCount() == 0)
-            listview.setAdapter(new SimpleAdapter(getActivity(), data, android.R.layout.simple_list_item_1, from, to));
+        listview.setAdapter(new SimpleAdapter(getActivity(), data, android.R.layout.simple_list_item_1, from, to));
 
         //Handles touches to the ListView items. In this case it replaces the fragment
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
