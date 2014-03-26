@@ -62,3 +62,11 @@ And fair warning: With your detail activity stuff, it will crash.
 I fixed the bug, and one other thing (I commented it in).
 
 From here, it looks like you've got one or two things left. If you try rotating the app, it won't change to the layout that was built for it (it'll resize it's current layout), I purposely left this alone and see if you can find it :merong:. But it's a really simple fix, you need to remove a word in the manifest.
+
+**(26/03/14)**
+Everything should be done at this point. The 'fix' was to remove the `orientation` flag from the manifest. The reason why we need to do this, is because we are handling rotation ourselves rather than letting the system do it. Doing this gives rise to one problem, which I won't fix as it's pretty simple and straight forward.
+
+I will explain this new issue though, as it's quite important to understand what's going on. The `orientation` flag lets the system handle it and prevents the system from destroying and recreating the fragment/activity. This sounds nice, but can give rise to other issues (such as not switching between orientation specific layouts).
+By removing this flag, we are allowing the system to do this, which allows it to redraw and remesure everything so there are no issues without layouts or anything.   
+The problem with this though, is we need to manually store certain bits of data which will be destroyed along with the activity/fragment. Such data includes, listview position and data transfered via bundles (such as the `ContentFragment`).   
+Storing the data isn't that hard and it's pretty much taken care by the system (all you need to do is to tell it what to store and restore, and it'll do the rest).
